@@ -1,0 +1,13 @@
+diff --git a/dmenu.c b/dmenu.c
+index e0c2f80..a566b55 100644
+--- a/dmenu.c
++++ b/dmenu.c
+@@ -136,7 +136,7 @@ drawmenu(void)
+ 
+ 	if ((curpos = TEXTNW(text, cursor) + bh / 2 - 2) < w) {
+ 		drw_setscheme(drw, &scheme[SchemeNorm]);
+-		drw_rect(drw, x + curpos + 2, 2, 1, bh - 4, 1, 1, 0);
++		drw_rect(drw, x + curpos + 2, 2, 0, bh - 4, 1, 1, 0);
+ 	}
+ 
+ 	if (lines > 0) {
